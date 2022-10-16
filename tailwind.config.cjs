@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "indigo-dye": "124E78",
-        "orange-yellow": "F2BB05",
-        "burnt-orange": "D74E09",
+        "indigo-dye": "#124E78",
+        "orange-yellow": "#F2BB05",
+        "burnt-orange": "#D74E09",
       },
     },
   },
