@@ -4,10 +4,10 @@ import Header from "./Header";
 
 const SearchContainer = () => {
   return (
-    <>
+    <div className="bg-indigo-dye border-b-8 border-orange-yellow">
       <Header />
       <SearchBar />
-    </>
+    </div>
   );
 };
 
