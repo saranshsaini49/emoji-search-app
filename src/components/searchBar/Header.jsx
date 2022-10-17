@@ -1,12 +1,22 @@
-import React from "react";
+import { data } from "/src/data/data.js";
+import React, { useEffect, useState } from "react";
 
 const Header = () => {
+  const [randomEmoji, setRandomEmoji] = useState(
+    data[Math.floor(Math.random() * data.length)].emoji
+  );
+  useEffect(() => {
+    setTimeout(() => {
+      setRandomEmoji(data[Math.floor(Math.random() * data.length)].emoji);
+    }, 4000);
+  }, [randomEmoji]);
+
   return (
     <div className="flex justify-center py-4 ">
-      <div className="flex gap-2 text-2xl">
-        <p>😀</p>
+      <div className="flex gap-3 text-2xl">
+        <p>{randomEmoji}</p>
         <h4>Search Emoji</h4>
-        <p>😀</p>
+        <p>{randomEmoji}</p>
       </div>
     </div>
   );
