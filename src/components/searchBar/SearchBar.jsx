@@ -2,9 +2,9 @@ import React from "react";
 
 const SearchBar = () => {
   return (
-    <div className="flex justify-center py-2">
+    <div className="flex justify-center py-4">
       <input
-        className=" outline-none px-2 md:w-1/2 h-8 rounded-sm"
+        className=" outline-none p-3 md:w-1/2 rounded-md text-lg tracking-widest font-medium "
         type="text"
         placeholder="Find your emoji..."
       />
