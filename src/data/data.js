@@ -1,4 +1,4 @@
-const data=[
+export const data = [
   {
     emoji: "😀",
     name: "grinning face",
